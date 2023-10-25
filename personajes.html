@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css">
+    <title>Producción en clase: El Marginal</title>
+</head>
+<body style="background-color: black;">
+    <header>
+        <div>
+            <img src="images/Marginal_Logo.png" alt="Logo Marginal">
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html" style="color: yellow;">Inicio</a></li>
+                <li><a href="personajes.html" style="color: yellow;">Personajes Principales</a></li>
+                <li><a href="galeria.html" style="color: yellow;">Galería de fotos</a></li>
+                <li><a href="resenas.html" style="color: yellow;">Reseñas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="secundario">
+            <h1 style="color: yellow; margin-bottom: 10px; margin-top: 0px;">Personajes: </h1>
+            <a href="images/1_Pastor.jpg" data-lightbox="personajes" data-title="Pastor: Es uno de los personajes centrales de la serie. A medida que avanza la serie, su relación con los demás prisioneros y su lucha por mantener su identidad oculta se vuelven elementos clave de la trama." class="lightbox-link">
+                <img src="images/1_Pastor_Mini.jpg" width="150px" alt="Personaje: Pastor" style="border: 3px solid yellow; border-radius: 10px; margin-left: 90px;">
+            </a>
+            <a href="images/2_Diosito.jpg" data-lightbox="personajes" data-title= "Diosito: Es el hermano menor de Mario Borges. Tiene afinidad con Pastor, pero Diosito jamás perdonaría enterarse que él es en realidad Miguel, un ex policía que vino a infiltrarse en la banda." class="lightbox-link">
+                <img src="images/2_Diosito_Mini.jpg" width="150px" alt="Personaje: Diosito" style="border: 3px solid yellow; border-radius: 10px;">
+            </a>
+            <a href="images/3_Borges.jpg" data-lightbox="personajes" data-title= "Mario Borges: Es el líder de las bandas de la cárcel de San Onofre. Maneja desde adentro todo el comercio interno y el consumo de los presos." class="lightbox-link">
+                <img src="images/3_Borges_Mini.jpg" width="150px" alt="Personaje: Borges" style="border: 3px solid yellow; border-radius: 10px;">
+            </a>
+            <a href="images/4_Antin.jpg" data-lightbox="personajes" data-title= "Antín: Es el director del penal, un burócrata corrupto. Maneja la cárcel a su conveniencia. De esta forma, ha dejado crecer a los Borges, los hermanos que controlan la cárcel y se ha beneficiado del negocio sucio de la banda casi como si fuese un socio más." class="lightbox-link"> 
+                <img src="images/4_Antin_Mini.jpg" width="150px" alt="Personaje: Antin" style="border: 3px solid yellow; border-radius: 10px;">
+            </a>
+            <a href="images/5_Cesar.jpg" data-lightbox="personajes" data-title= "César: Es el líder de la otra banda de San Onofre, más conocida como la Sub-21. Ellos están enfrentados a los Borges porque quieren someter a todos en la prisión." class="lightbox-link"> 
+                <img src="images/5_Cesar_Mini.jpg" width="150px" alt="Personaje: Cesar" style="border: 3px solid yellow; border-radius: 10px;">
+            </a>
+            <a href="images/6_James.jpg" data-lightbox="personajes" data-title= "James: También conocido como “El Colombiano”, es parte de la banda de los Borges en San Onofre, es la mano derecha de Mario." class="lightbox-link"> 
+                <img src="images/6_James_Mini.jpg" width="150px" alt="Personaje: James" style="border: 3px solid yellow; border-radius: 10px;">
+            </a>
+        </article>
+    </section>
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
