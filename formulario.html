@@ -22,43 +22,43 @@
                 <li><a href="personajes.html" style="color: yellow;">Personajes Principales</a></li>
                 <li><a href="galeria.html" style="color: yellow;">Galería de fotos</a></li>
                 <li><a href="resenas.html" style="color: yellow;">Reseñas</a></li>
+                <li><a href="formulario.html" style="color: yellow;">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
     <section>
         <article class="principal">
             <div>
-                <img src="images/Imagen_Fondo.jpg" alt="Imagen de fondo" style="border: 3px solid #ff0000; border-radius: 10px;">
+                <img src="images/Formulario.jpg" alt="Imagen de fondo" style="border: 3px solid #ff0000; border-radius: 10px;">
                 <h1 style="color: yellow; text-align: center;">
-                Bienvenidos, siéntanse <span style="text-decoration: underline;">como en casa</span>.
+                    Contacto <span style="text-decoration: underline;"> </span>
                 </h1>
-                <p>"El Marginal" cuenta dos historias en diferentes tiempos: una en el presente y otra en el pasado. La trama se centra en Miguel Palacios, un ex-policía que se infiltra en la cárcel de San Onofre haciéndose pasar por un preso llamado Pastor Peña. Su misión es sacar información sobre un secuestro y asesinato del pasado.
-                Dentro de la cárcel, Pastor se mezcla con otros presos para ganarse su confianza y obtener pistas. Conforme avanza la historia, Pastor se da cuenta de lo complicada que es la vida en la prisión, las peleas entre grupos de presos y los problemas con los guardias y el sistema de la cárcel.
-                La serie toca temas fuertes como la violencia, la corrupción, la lealtad y la posibilidad de redimirse. Explora las historias y vidas de los internos, así como las relaciones de poder dentro y fuera de la cárcel. Además, usa flashbacks para revelar más sobre el secuestro y asesinato que Pastor está investigando.
-                Conforme avanza la serie, se conocen mejor los personajes, sus razones y se descubren conexiones entre las diferentes tramas. "El Marginal" ha sido alabada por su enfoque crudo y realista de la vida en prisión, y por cómo explora la moralidad y la lucha por sobrevivir en un ambiente tan difícil.</p>
+               <p style="color: yellow;">Por favor, completa el siguiente formulario para poder ponerte en contacto con nosotros:</p>
             </div>
         </article>
-        <article class="secundario">
-           <article class="secundario">
-            
-                <h2 style="color: yellow; margin-bottom: 50px;">Creadores de "El Marginal": </h2>
-                <a href="images/Productor.jpg" data-lightbox="Galeria" data-title="Sebastián Ortega es un director, guionista y productor de cine y televisión argentino. Comenzó su carrera como productor en 2001, con la miniserie El hacker y al año siguiente comenzó a trabajar en la productora Ideas del sur. Desde 2006 tiene su propia productora de medios, Underground Contenidos.">
-                    <img src="images/Productor_Mini.jpg" width="300px" alt="Productor" style="border: 3px solid yellow; margin-left: 50px;">
-                </a>
-                <a href="images/Escritor.jpg" data-lightbox="Galeria" data-title="Guillermo Salmerón es un productor y guionista argentino, autor de programas de televisión multipremiados, como El Marginal 1 y 2, Televisión por la identidad, Vidas Robadas, Televisión por la inclusión, Botineras, Santos y Pecadores, Caín y Abel, Falsos Falsificados, Humanos en el Camino, Un Año para Recordar y Libre-mente, entre otros.">
-                    <img src="images/Escritor_Mini.jpg" width="300px" alt="Escritor" style="border: 3px solid yellow; margin-left: 50px;">
-                </a>
-            
+        <article class="formulario">
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre" style="color: yellow;">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required style="color: red;">
+
+                <label for="email" style="color: yellow;">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required style="color: red;">
+
+                <label for="telefono" style="color: yellow;">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required style="color: red;">
+
+                <label for="mensaje" style="color: yellow; display: block;">Mensaje:</label>
+                <div style="display: flex; align-items: center;">
+                    <textarea id="mensaje" name="mensaje" rows="4" required style="color: red; width: 100%;"></textarea>
+                </div>
+
+
+
+                <input type="submit" value="Enviar">
+            </form>
         </article>
-
     </section>
-    <footer>
-        <img src="/images/redes/facebook.png" alt="Facebook">
-        <img src="/images/redes/twitter.png" alt="Twitter">
-        <img src="/images/redes/youtube.png" alt="Youtube">
-        <img src="/images/redes/instagram.png" alt="Instagram">
-    </footer>
-
     <script type="text/javascript">
         function myFunction() {
           var x = document.getElementById("menu_bar");
