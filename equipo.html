@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css">
+    <title>Producción en clase: El Marginal</title>
+</head>
+<body style="background-color: black;">
+    <header>
+        <div>
+            <img src="images/Marginal_Logo.png" alt="Logo Marginal">
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html" style="color: yellow;">Inicio</a></li>
+                <li><a href="galeria.html" style="color: yellow;">Galería de fotos</a></li>
+                <li><a href="equipo.html" style="color: yellow;">Equipo</a></li>
+                <li><a href="resenas.html" style="color: yellow;">Reseñas</a></li>
+                <li><a href="formulario.html" style="color: yellow;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+        <article class="principal" style="margin-bottom: -100px;"> <!-- Esto es para reducir el espacio entre el texto y el segundo artículo -->
+            <div>
+                <div>
+                    <img src="images/Foto_13.jpg" alt="Imagen de fondo" style="border: 3px solid #ff0000; border-radius: 10px;">
+                </div>
+                <div>
+                    <p>El género carcelario gustó siempre a lo largo de la historia audiovisual en todo el mundo.Y Sebastián Ortega, el creador de la serie ha sido fan de este género. <br>
+                    Son contenidos que llaman la atención por morbo, entretenimiento o identificación, hayan estado vinculados con el mundo carcelario o no.<br>
+                    Después, excede el ámbito carcelario y aborda temas como la inseguridad, la justicia y la injusticia, la libertad, que disparan diferentes tipos de lecturas.<br>
+                    Fue una serie bien escrita con construcción de personajes que hacen que la gente se identifique, por más que sean todos villanos, porque aquí no se salva nadie.<br>
+                    Desde el punto de vista del entretenimiento y más allá de la crueldad, hay un lugar de identificación con la jerga, con las costumbres y tradiciones de ese mundo.</p>
+                </div>
+            </div>
+        </article>
+        <article class="secundario" style="margin-bottom: -50px;">
+            <article class="secundario">
+                <h2 style="color: yellow; margin-bottom: 50px;">Creadores de "El Marginal": </h2>
+                <a href="images/Productor.jpg" data-lightbox="Galeria" data-title="Sebastián Ortega es un director, guionista y productor de cine y televisión argentino. Comenzó su carrera como productor en 2001, con la miniserie El hacker y al año siguiente comenzó a trabajar en la productora Ideas del sur. Desde 2006 tiene su propia productora de medios, Underground Contenidos.">
+                    <img src="images/Productor_Mini.jpg" width="300px" alt="Productor" style="border: 3px solid yellow; margin-left: 50px;">
+                </a>
+                <a href="images/Escritor.jpg" data-lightbox="Galeria" data-title="Guillermo Salmerón es un productor y guionista argentino, autor de programas de televisión multipremiados, como El Marginal 1 y 2, Televisión por la identidad, Vidas Robadas, Televisión por la inclusión, Botineras, Santos y Pecadores, Caín y Abel, Falsos Falsificados, Humanos en el Camino, Un Año para Recordar y Libre-mente, entre otros.">
+                    <img src="images/Escritor_Mini.jpg" width="300px" alt="Escritor" style="border: 3px solid yellow; margin-left: 50px;">
+                </a>
+            </article>
+        </article>
+    </section>
+        <section>
+        <article class="secundario" style="margin-bottom: -100px;">
+            <article class="secundario">
+                <a href="https://www.youtube.com/watch?v=rm0r-9_jpTE&ab_channel=Duki" target="_blank">
+                    <h2 style="color: yellow; text-align: center;">Banda Sonora de "El Marginal": </h2>
+                    <img src="images/Musica_1.jpg" alt="Imagen de fondo" style="border: 3px solid #ff0000; border-radius: 10px; max-width: 100%; display: block; margin: 0 auto;">
+                    <p>Duki, el popular artista de trap argentino, en "Entre cuatro paredes" será la cortina de la tercera parte del ciclo. La producción corrió a cargo de Oro Dembow (Roque Ferrari), y la masterización fue de Alex Psaraudakis. El video fue producido por Underground, bajo la dirección de Sebastián Ortega. <span style="color: yellow;">Click en la imagen para ver el videoclip.</span></p>
+                </a>
+            </article>
+        </article>
+        <article class="secundario">
+            <article class="secundario">
+                <a href="https://www.youtube.com/watch?v=u1hkgB5ZLSs&ab_channel=L-Gante" target="_blank">
+                    <img src="images/Musica_2.jpg" alt="Imagen de fondo" style="border: 3px solid #ff0000; border-radius: 10px; max-width: 100%; display: block; margin: 0 auto;">
+                    <p>L-Gante en "El Marginal 4": sorprendió con su aparición en la nueva temporada de la serie de Netflix
+                    La "cumbia 420" se escabulló entre los barrotes y tomó por sopresa a millones de fanáticos de la exitosa serie argentina sobre los presidiarios. La nueva cortina musical de El Marginal 4 estuvo a cargo del célebre productor Bizarrap, y colaboraron L-Gante junto a Pablito Lescano. <span style="color: yellow;">Click en la imagen para ver el videoclip.</span></p>
+                </a>
+            </article>
+        </article>
+        </section>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
