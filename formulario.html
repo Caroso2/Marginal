@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/lightbox.css" type="text/css">
     <title>Producción en clase: El Marginal</title>
 </head>
+
 <body style="background-color: black;">
+
     <header>
         <div>
             <img src="images/Marginal_Logo.png" alt="Logo Marginal">
@@ -27,41 +29,45 @@
             </ul>
         </nav>
     </header>
-    <section>
+
+    <section style="margin-top: -90px;">
         <article class="principal">
-            <div>
-                <img src="images/Formulario.jpg" alt="Imagen de fondo" style="border: 3px solid #ff0000; border-radius: 10px;">
-                <h1 style="color: yellow; text-align: center;">
-                    Por favor, completa el siguiente formulario para poder ponerte en contacto con nosotros: <span style="text-decoration: underline;"> </span>
-                </h1>
-            </div>
+        <div>
+            <img src="images/Formulario.jpg" alt="Imagen de fondo" style="border: 3px solid #ff0000; border-radius: 10px;">
+            <h1 style="color: yellow; text-align: center;">
+            Por favor, completa el siguiente formulario para poder ponerte en contacto con nosotros:
+            </h1>
+        </div>
         </article>
-        <article class="formulario">
-        <form action="procesar_formulario.php" method="post">
-            <div style="margin-bottom: 10px;">
-                <label for="nombre" style="color: yellow;">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required style="color: red;">
-            </div>
+    </section>
 
-            <div style="margin-bottom: 10px;">
-                <label for="email" style="color: yellow;">Correo Electrónico:</label>
-                <input type="email" id="email" name "email" required style="color: red;">
-            </div>
+    <article class="formulario">
+    <form action="procesar_formulario.php" method="post">
+        <div style="margin-bottom: 10px;">
+            <label for="nombre" style="color: yellow; margin-left: 100px;">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required style="color: red;">
+        </div>
 
-            <div style="margin-bottom: 10px;">
-                <label for="telefono" style="color: yellow;">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required style="color: red;">
-            </div>
+        <div style="margin-bottom: 10px;">
+            <label for="email" style="color: yellow; margin-left: 100px;">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required style="color: red;">
+        </div>
 
-            <div style="margin-bottom: 10px;">
-                <label for="mensaje" style="color: yellow; display: block;">Mensaje:</label>
-                <div style="display: flex; align-items: center;">
-                    <textarea id="mensaje" name="mensaje" rows="3" required style="color: red; width: 90%;"></textarea>
-                </div>
-            </div>
-            <input type="submit" value="Enviar">
+        <div style="margin-bottom: 10px;">
+            <label for="telefono" style="color: yellow; margin-left: 100px;">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required style="color: red;">
+        </div>
+
+        <div style="margin-bottom: 10px;">
+        <label for="mensaje" style="color: yellow; margin-left: 100px; display: block;">Mensaje:</label>
+        <div style="display: flex; align-items: center;">
+        <textarea id="mensaje" name="mensaje" rows="3" required style="color: red; width: 78%; margin-left: 100px;"></textarea>
+        </div>
+        </div>
+        <input type="submit" value="Enviar" style="margin-left: 100px;">
         </form>
     </article>
+
     </section>
     <script type="text/javascript">
         function myFunction() {
