@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css" type="text/css">
     <link rel="stylesheet" href="css/lightbox.css" type="text/css">
-    <title>Producción en clase: El Marginal</title>
+    <title>El Marginal</title>
 </head>
 
 <body style="background-color: black;">
@@ -22,7 +22,13 @@
             <ul>
                 <li><a href="index.html" style="color: yellow;">Inicio</a></li>
                 <li><a href="galeria.html" style="color: yellow;">Galería de fotos</a></li>
-                <li><a href="equipo.html" style="color: yellow;">Equipo</a></li>
+                <li class="dropdown">
+                    <a href="equipo.html" class="dropbtn" style="color: yellow;">Equipo</a>
+                    <div class="dropdown-content">
+                         <a href="equipo.html#banda-sonora" style="color: black;">Banda Sonora</a>
+                         <a href="equipo.html#creadores" style="color: black;">Creadores</a>
+                    </div>
+                </li>
                 <li><a href="temporadas.html" style="color: yellow;">Temporadas</a></li>
                 <li><a href="resenas.html" style="color: yellow;">Reseñas</a></li>
                 <li><a href="formulario.html" style="color: yellow;">Contacto</a></li>
@@ -30,45 +36,67 @@
         </nav>
     </header>
 
-    <section style="margin-top: -90px;">
+    <section style="margin-top: -65px;">
         <article class="principal">
-        <div>
-            <img src="images/Formulario.jpg" alt="Imagen de fondo" style="border: 3px solid #ff0000; border-radius: 10px;">
-            <h1 style="color: yellow; text-align: center;">
-            Por favor, completa el siguiente formulario para poder ponerte en contacto con nosotros:
-            </h1>
-        </div>
+            <div>
+                <img src="images/Foto_Form.jpg" alt="Imagen de fondo" style="display: block; margin: 0 auto; border: 3px solid #ff0000; border-radius: 10px;">
+                <h2 style="color: yellow; text-align: center;">
+                Por favor, completa el siguiente formulario para poder ponerte en contacto con nosotros.
+                </h2>
+            </div>
         </article>
     </section>
 
-    <article class="formulario">
-    <form action="procesar_formulario.php" method="post">
-        <div style="margin-bottom: 10px;">
-            <label for="nombre" style="color: yellow; margin-left: 100px;">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required style="color: red;">
-        </div>
+    <div class="contact-form" style="margin-left: auto; margin-right: auto; width: 75%;">
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre" style="font-size: 25px;">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
 
-        <div style="margin-bottom: 10px;">
-            <label for="email" style="color: yellow; margin-left: 100px;">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required style="color: red;">
-        </div>
+            <label for="apellido" style="font-size: 25px;">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
 
-        <div style="margin-bottom: 10px;">
-            <label for="telefono" style="color: yellow; margin-left: 100px;">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required style="color: red;">
-        </div>
+            <label for="email" style="font-size: 25px;">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
 
-        <div style="margin-bottom: 10px;">
-        <label for="mensaje" style="color: yellow; margin-left: 100px; display: block;">Mensaje:</label>
-        <div style="display: flex; align-items: center;">
-        <textarea id="mensaje" name="mensaje" rows="3" required style="color: red; width: 78%; margin-left: 100px;"></textarea>
-        </div>
-        </div>
-        <input type="submit" value="Enviar" style="margin-left: 100px;">
+            <label for="telefono" style="font-size: 25px;">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="masculino" style="font-size: 25px;">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino" style="font-size: 25px;">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <label for="femenino" style="font-size: 25px;">Femenino</label>
+            <br><br>
+
+            <label for="fecha_nacimiento" style="font-size: 25px;">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+            <label for="ciudad" style="font-size: 25px;">Ciudad de Residencia:</label>
+            <input type="text" id="ciudad" name="ciudad"><br><br>
+
+            <label for="comentarios" style="font-size: 25px;">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+            <img src="images/Foto_Form_2.jpg" alt="Foto de formulario" width="590" height="490" style="float: right; margin-top: -470px; border: 2px solid yellow;">
         </form>
-    </article>
+    </div>
 
-    </section>
+    <footer>
+        <div>
+            <p style="color: red; text-align: center;">© 2023 El Marginal | Todos los derechos reservados</p>
+        </div>
+        <a href="https://www.instagram.com/elmarginaltv/?hl=es" target="_blank">
+            <img src="images/R_Sociales/Instagram.png" alt="Instagram de El Marginal" style="margin-right: 10px;">
+        </a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Felmarginal_ok" target="_blank">
+            <img src="images/R_Sociales/Twitter.png" alt="Twitter de El Marginal" style="margin-right: 10px;">
+        </a>
+        <a href="https://www.facebook.com/watch/?v=2956152144658205" target="_blank">
+            <img src="images/R_Sociales/Facebook.png" alt="Facebook de El Marginal" style="margin-right: 10px;">
+        </a>
+    </footer>
+
     <script type="text/javascript">
         function myFunction() {
           var x = document.getElementById("menu_bar");

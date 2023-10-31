@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css" type="text/css">
     <link rel="stylesheet" href="css/lightbox.css" type="text/css">
-    <title>Producción en clase: El Marginal</title>
+    <title>El Marginal</title>
 </head>
 
 <body style="background-color: black;">
@@ -22,7 +22,13 @@
             <ul>
                 <li><a href="index.html" style="color: yellow;">Inicio</a></li>
                 <li><a href="galeria.html" style="color: yellow;">Galería de fotos</a></li>
-                <li><a href="equipo.html" style="color: yellow;">Equipo</a></li>
+                <li class="dropdown">
+                    <a href="equipo.html" class="dropbtn" style="color: yellow;">Equipo</a>
+                    <div class="dropdown-content">
+                         <a href="equipo.html#banda-sonora" style="color: black;">Banda Sonora</a>
+                         <a href="equipo.html#creadores" style="color: black;">Creadores</a>
+                    </div>
+                </li>
                 <li><a href="temporadas.html" style="color: yellow;">Temporadas</a></li>
                 <li><a href="resenas.html" style="color: yellow;">Reseñas</a></li>
                 <li><a href="formulario.html" style="color: yellow;">Contacto</a></li>
@@ -30,86 +36,108 @@
         </nav>
     </header>
 
-    <section style="margin-top: -90px;">
-    <article class="principal">
-        <div>
-            <img src="images/Principal.jpg" alt="Los Borges" style="border: 3px solid #ff0000; border-radius: 10px;">
-            <h2 style="color: yellow; font-size: 21px; margin-bottom: -100px;">En esta sección, se encuentran diversas fotografías de la serie junto con información detallada sobre cada escena.</h2>
+   <section style="margin-top: -50px;">
+       <article class="principal">
+             <div>
+                 <h1 style="color: yellow; text-align: center;">
+                     <img src="images/Foto_Galeria.jpg" alt="Los Borges" style="display: block; margin: 0 auto; border: 3px solid #ff0000; border-radius: 10px;">
+                     <br>
+                     <span style="font-size: 25px;">Galeria de fotos <span style="text-decoration: underline;">El Marginal</span>.</span>
+                     <h2 style="color: white; font-size: 20px; text-align: center;">
+                     En esta sección, se encuentran diversas fotografías de la serie junto con información detallada sobre cada escena.
+                     </h2>
+                 </h1>
+             </div>
+       </article>
+   </section>
+
+   <article class="secundario">
+        <div class="image-row">
+            <a class="example-image-link" href="images/Galeria/Foto_1.jpg" data-lightbox="Galeria" data-title="Miguel Dimarco es un ex-policía que ingresa como convicto en la prisión de San Onofre con una identidad falsa y una causa inventada. Su misión es infiltrarse dentro de una banda mixta de presos y carceleros que opera desde adentro del penal, rescatar a la hija de un juez muy importante y así tener su libertad.">
+                <img class="example-image" src="images/Galeria/Foto_1_Mini.jpg" alt="Foto 1" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_4.jpg" data-lightbox="Galeria" data-title="Palacios asesina al juez luego de que este lo traicione y no cumplir su parte del trato.">
+                <img class="example-image" src="images/Galeria/Foto_4_Mini.jpg" alt="Foto 4" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_7.jpg" data-lightbox="Galeria" data-title="Borges y sus compañeros arruinan uno de los negocios de “El Sapo” quien en ese momento tenía el poder en la cárcel. “El Sapo” desconfía de Patricio "Doc" Salgado, quién termino preso incriminándose por el asesinato realizado por su pareja, y recibe una paliza por parte de él.">
+                <img class="example-image" src="images/Galeria/Foto_7_Mini.jpg" alt="Foto 7" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_10.jpg" data-lightbox="Galeria" data-title="Gladys, la esposa de Mario Borges, le cuenta a “Diosito” que encontraron a su novia asesinada. Fue un antes y un después su relación con su hermano “Borges” ya que poco a poco comienza a sospechar que tuvo relación directa con dicho asesinato.">
+                <img class="example-image" src="images/Galeria/Foto_10_Mini.jpg" alt="Foto 10" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
         </div>
-    </article>
-    <article class="secundario">
-    <div class="image-row">
-        <a class="example-image-link" href="images/Foto_1.jpg" data-lightbox="Galeria" data-title="Miguel Dimarco es un ex-policía que ingresa como convicto en la prisión de San Onofre con una identidad falsa y una causa inventada. Su misión es infiltrarse dentro de una banda mixta de presos y carceleros que opera desde adentro del penal, rescatar a la hija de un juez muy importante y así tener su libertad.">
-            <img class="example-image" src="images/Foto_1_Mini.jpg" alt="Foto 1" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-        <a class="example-image-link" href="images/Foto_4.jpg" data-lightbox="Galeria" data-title="Palacios asesina al juez luego de que este lo traicione y no cumplir su parte del trato.">
-            <img class="example-image" src="images/Foto_4_Mini.jpg" alt="Foto 4" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-        <a class="example-image-link" href="images/Foto_7.jpg" data-lightbox="Galeria" data-title="Borges y sus compañeros arruinan uno de los negocios de “El Sapo” quien en ese momento tenía el poder en la cárcel. “El Sapo” desconfía de Patricio "Doc" Salgado, quién termino preso incriminándose por el asesinato realizado por su pareja, y recibe una paliza por parte de él.">
-            <img class="example-image" src="images/Foto_7_Mini.jpg" alt="Foto 7" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-        <a class="example-image-link" href="images/Foto_10.jpg" data-lightbox="Galeria" data-title="Gladys, la esposa de Mario Borges, le cuenta a “Diosito” que encontraron a su novia asesinada. Fue un antes y un después su relación con su hermano “Borges” ya que poco a poco comienza a sospechar que tuvo relación directa con dicho asesinato.">
-            <img class="example-image" src="images/Foto_10_Mini.jpg" alt="Foto 10" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-    </div>
 
-    <div class="image-row">
-        <a class="example-image-link" href="images/Foto_2.jpg" data-lightbox="Galeria" data-title="Palacios conoce a “Diosito” quien junto a su hermano y jefe “Borges”, son quienes toman las ordenes dentro de la cárcel. Principales sospechosos de tener secuestrada a la hija del juez ya mencionado.">
-            <img class="example-image" src="images/Foto_2_Mini.jpg" alt="Foto 2" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-        <a class="example-image-link" href="images/Foto_5.jpg" data-lightbox="Galeria" data-title="Los Borges, junto a todo su equipo, prenden fuego el patio. Lugar donde se encontraban sus enemigos “La Sub 21”.">
-            <img class="example-image" src="images/Foto_5_Mini.jpg" alt="Foto 5" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-         <a class="example-image-link" href="images/Foto_8.jpg" data-lightbox="Galeria" data-title="Diosito junto a su hermano Borges asesinas a “El Sapo”, convirtiéndose en los nuevos al poder dentro de la cárcel.">
-            <img class="example-image" src="images/Foto_8_Mini.jpg" alt="Foto 8" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-         <a class="example-image-link" href="images/Foto_11.jpg" data-lightbox="Galeria" data-title="Al lograr desenterrar a Diosito, comienza el combate más esperado entre él y Pantera.">
-            <img class="example-image" src="images/Foto_11_Mini.jpg" alt="Foto 11" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-    </div>
+        <div class="image-row">
+            <a class="example-image-link" href="images/Galeria/Foto_2.jpg" data-lightbox="Galeria" data-title="Palacios conoce a “Diosito” quien junto a su hermano y jefe “Borges”, son quienes toman las ordenes dentro de la cárcel. Principales sospechosos de tener secuestrada a la hija del juez ya mencionado.">
+                <img class="example-image" src="images/Galeria/Foto_2_Mini.jpg" alt="Foto 2" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_5.jpg" data-lightbox="Galeria" data-title="Los Borges, junto a todo su equipo, prenden fuego el patio. Lugar donde se encontraban sus enemigos “La Sub 21”.">
+                <img class="example-image" src="images/Galeria/Foto_5_Mini.jpg" alt="Foto 5" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_8.jpg" data-lightbox="Galeria" data-title="Diosito junto a su hermano Borges asesinas a “El Sapo”, convirtiéndose en los nuevos al poder dentro de la cárcel.">
+                <img class="example-image" src="images/Galeria/Foto_8_Mini.jpg" alt="Foto 8" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_11.jpg" data-lightbox="Galeria" data-title="Al lograr desenterrar a Diosito, comienza el combate más esperado entre él y Pantera.">
+                <img class="example-image" src="images/Galeria/Foto_11_Mini.jpg" alt="Foto 11" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+        </div>
 
-    <div class="image-row">
-        <a class="example-image-link" href="images/Foto_3.jpg" data-lightbox="Galeria" data-title="Pastor encuentra a la hija del juez y le dice que prontamente la rescatará, que por el momento tenga paciencia.">
-            <img class="example-image" src="images/Foto_3_Mini.jpg" alt="Foto 3" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-        <a class="example-image-link" href="images/Foto_6.jpg" data-lightbox="Galeria" data-title="Borges, le dispara a su hermano “Diosito” por accidente por confundirlo con un integrante de “La Sub 21”. Prontamente es rescatado.">
-            <img class="example-image" src="images/Foto_6_Mini.jpg" alt="Foto 6" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-         <a class="example-image-link" href="images/Foto_9.jpg" data-lightbox="Galeria" data-title="El es “moco”, un joven adinerado que choco alcoholizado asesinando a sus amigos, terminó en la cárcel de San Onofre al cuidado de los “Borges”. Por lo que podemos ver, las cosas no resultaron bien en un principio.">
-            <img class="example-image" src="images/Foto_9_Mini.jpg" alt="Foto 9" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-         <a class="example-image-link" href="images/Foto_12.jpg" data-lightbox="Galeria" data-title="Se muestra un flashback de Mario en el pasado en un intento de robo con su esposa, pero la mujer termina muriendo en una balacera y su hijo se queda sin madre. Rápidamente se da a conocer que ese niño es Diosito, por lo que Mario no es su hermano, como dijo ser durante cuatro entregas, sino que es su padre, por lo que el personaje “Diosito” no le vuelve a dirigir la palabra.">
-            <img class="example-image" src="images/Foto_12_Mini.jpg" alt="Foto 12" style="border: 3px solid yellow; border-radius: 10px;" />
-        </a>
-    </div>
-    </article>
-    </section>
+        <div class="image-row">
+            <a class="example-image-link" href="images/Galeria/Foto_3.jpg" data-lightbox="Galeria" data-title="Pastor encuentra a la hija del juez y le dice que prontamente la rescatará, que por el momento tenga paciencia.">
+                <img class="example-image" src="images/Galeria/Foto_3_Mini.jpg" alt="Foto 3" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_6.jpg" data-lightbox="Galeria" data-title="Borges, le dispara a su hermano “Diosito” por accidente por confundirlo con un integrante de “La Sub 21”. Prontamente es rescatado.">
+                <img class="example-image" src="images/Galeria/Foto_6_Mini.jpg" alt="Foto 6" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_9.jpg" data-lightbox="Galeria" data-title="El es “moco”, un joven adinerado que choco alcoholizado asesinando a sus amigos, terminó en la cárcel de San Onofre al cuidado de los “Borges”. Por lo que podemos ver, las cosas no resultaron bien en un principio.">
+                <img class="example-image" src="images/Galeria/Foto_9_Mini.jpg" alt="Foto 9" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+            <a class="example-image-link" href="images/Galeria/Foto_12.jpg" data-lightbox="Galeria" data-title="Se muestra un flashback de Mario en el pasado en un intento de robo con su esposa, pero la mujer termina muriendo en una balacera y su hijo se queda sin madre. Rápidamente se da a conocer que ese niño es Diosito, por lo que Mario no es su hermano, como dijo ser durante cuatro entregas, sino que es su padre, por lo que el personaje “Diosito” no le vuelve a dirigir la palabra.">
+                <img class="example-image" src="images/Galeria/Foto_12_Mini.jpg" alt="Foto 12" style="border: 3px solid yellow; border-radius: 10px;" />
+            </a>
+        </div>
+   </article>
 
-    <section>
+   <section>
         <article class="secundario">
             <h1 style="color: yellow; margin-bottom: 10px; margin-top: 0px;">Personajes: </h1>
-            <a href="images/1_Pastor.jpg" data-lightbox="personajes" data-title="Pastor: Es uno de los personajes centrales de la serie. A medida que avanza la serie, su relación con los demás prisioneros y su lucha por mantener su identidad oculta se vuelven elementos clave de la trama." class="lightbox-link">
-                <img src="images/1_Pastor_Mini.jpg" width="150px" alt="Personaje: Pastor" style="border: 3px solid yellow; border-radius: 10px; margin-left: 90px;">
+            <a href="images/Personajes/1_Pastor.jpg" data-lightbox="personajes" data-title="Pastor: Es uno de los personajes centrales de la serie. A medida que avanza la serie, su relación con los demás prisioneros y su lucha por mantener su identidad oculta se vuelven elementos clave de la trama." class="lightbox-link">
+                <img src="images/Personajes/1_Pastor_Mini.jpg" width="150px" alt="Personaje: Pastor" style="border: 3px solid yellow; border-radius: 10px; margin-left: 90px;">
             </a>
-            <a href="images/2_Diosito.jpg" data-lightbox="personajes" data-title= "Diosito: Es el hermano menor de Mario Borges. Tiene afinidad con Pastor, pero Diosito jamás perdonaría enterarse que él es en realidad Miguel, un ex policía que vino a infiltrarse en la banda." class="lightbox-link">
-                <img src="images/2_Diosito_Mini.jpg" width="150px" alt="Personaje: Diosito" style="border: 3px solid yellow; border-radius: 10px;">
+            <a href="images/Personajes/2_Diosito.jpg" data-lightbox="personajes" data-title= "Diosito: Es el hermano menor de Mario Borges. Tiene afinidad con Pastor, pero Diosito jamás perdonaría enterarse que él es en realidad Miguel, un ex policía que vino a infiltrarse en la banda." class="lightbox-link">
+                <img src="images/Personajes/2_Diosito_Mini.jpg" width="150px" alt="Personaje: Diosito" style="border: 3px solid yellow; border-radius: 10px;">
             </a>
-            <a href="images/3_Borges.jpg" data-lightbox="personajes" data-title= "Mario Borges: Es el líder de las bandas de la cárcel de San Onofre. Maneja desde adentro todo el comercio interno y el consumo de los presos." class="lightbox-link">
-                <img src="images/3_Borges_Mini.jpg" width="150px" alt="Personaje: Borges" style="border: 3px solid yellow; border-radius: 10px;">
+            <a href="images/Personajes/3_Borges.jpg" data-lightbox="personajes" data-title= "Mario Borges: Es el líder de las bandas de la cárcel de San Onofre. Maneja desde adentro todo el comercio interno y el consumo de los presos." class="lightbox-link">
+                <img src="images/Personajes/3_Borges_Mini.jpg" width="150px" alt="Personaje: Borges" style="border: 3px solid yellow; border-radius: 10px;">
             </a>
-            <a href="images/4_Antin.jpg" data-lightbox="personajes" data-title= "Antín: Es el director del penal, un burócrata corrupto. Maneja la cárcel a su conveniencia. De esta forma, ha dejado crecer a los Borges, los hermanos que controlan la cárcel y se ha beneficiado del negocio sucio de la banda casi como si fuese un socio más." class="lightbox-link"> 
-                <img src="images/4_Antin_Mini.jpg" width="150px" alt="Personaje: Antin" style="border: 3px solid yellow; border-radius: 10px;">
+            <a href="images/Personajes/4_Antin.jpg" data-lightbox="personajes" data-title= "Antín: Es el director del penal, un burócrata corrupto. Maneja la cárcel a su conveniencia. De esta forma, ha dejado crecer a los Borges, los hermanos que controlan la cárcel y se ha beneficiado del negocio sucio de la banda casi como si fuese un socio más." class="lightbox-link"> 
+                <img src="images/Personajes/4_Antin_Mini.jpg" width="150px" alt="Personaje: Antin" style="border: 3px solid yellow; border-radius: 10px;">
             </a>
-            <a href="images/5_Cesar.jpg" data-lightbox="personajes" data-title= "César: Es el líder de la otra banda de San Onofre, más conocida como la Sub-21. Ellos están enfrentados a los Borges porque quieren someter a todos en la prisión." class="lightbox-link"> 
-                <img src="images/5_Cesar_Mini.jpg" width="150px" alt="Personaje: Cesar" style="border: 3px solid yellow; border-radius: 10px;">
+            <a href="images/Personajes/5_Cesar.jpg" data-lightbox="personajes" data-title= "César: Es el líder de la otra banda de San Onofre, más conocida como la Sub-21. Ellos están enfrentados a los Borges porque quieren someter a todos en la prisión." class="lightbox-link"> 
+                <img src="images/Personajes/5_Cesar_Mini.jpg" width="150px" alt="Personaje: Cesar" style="border: 3px solid yellow; border-radius: 10px;">
             </a>
-            <a href="images/6_James.jpg" data-lightbox="personajes" data-title= "James: También conocido como “El Colombiano”, es parte de la banda de los Borges en San Onofre, es la mano derecha de Mario." class="lightbox-link"> 
-                <img src="images/6_James_Mini.jpg" width="150px" alt="Personaje: James" style="border: 3px solid yellow; border-radius: 10px;">
+            <a href="images/Personajes/6_James.jpg" data-lightbox="personajes" data-title= "James: También conocido como “El Colombiano”, es parte de la banda de los Borges en San Onofre, es la mano derecha de Mario." class="lightbox-link"> 
+                <img src="images/Personajes/6_James_Mini.jpg" width="150px" alt="Personaje: James" style="border: 3px solid yellow; border-radius: 10px;">
             </a>
         </article>
-    </section>
+   </section>
 
-    <script type="text/javascript">
+   <footer>
+        <div>
+            <p style="color: red; text-align: center;">© 2023 El Marginal | Todos los derechos reservados</p>
+        </div>
+        <a href="https://www.instagram.com/elmarginaltv/?hl=es" target="_blank">
+            <img src="images/R_Sociales/Instagram.png" alt="Instagram de El Marginal" style="margin-right: 10px;">
+        </a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Felmarginal_ok" target="_blank">
+            <img src="images/R_Sociales/Twitter.png" alt="Twitter de El Marginal" style="margin-right: 10px;">
+        </a>
+        <a href="https://www.facebook.com/watch/?v=2956152144658205" target="_blank">
+            <img src="images/R_Sociales/Facebook.png" alt="Facebook de El Marginal" style="margin-right: 10px;">
+        </a>
+   </footer>
+
+   <script type="text/javascript">
         function myFunction() {
           var x = document.getElementById("menu_bar");
           if (x.className === "") {
@@ -118,7 +146,7 @@
             x.className = "";
           }
         }
-    </script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
+   </script>
+   <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
