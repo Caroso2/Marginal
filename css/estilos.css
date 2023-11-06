@@ -22,8 +22,10 @@ header{
 }
 
 .Index h2 {
-    font-size: 20px; /* Ajusta el tamaño del texto según tus preferencias */
+    font-size: 20px;
     text-align: left;
+    width: 90%; /* Limita el ancho del texto */
+    margin: 0 auto;
 }
 
 nav ul{
@@ -239,11 +241,11 @@ a:hover {
         }
 
         .Index{
-            margin-top: -150px;
+            margin-top: -120px;
         }
 
         .Index h2 {
-            font-size: 15px; /* Ajusta el tamaño del texto según tus preferencias */
+            font-size: 15px; /* Tamaño del texto */
             text-align: justify;
         }
 
