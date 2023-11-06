@@ -26,21 +26,6 @@ header{
     text-align: left;
 }
 
-.formulario-image {
-    float: right;
-    border: 2px solid yellow;
-    width: 590px;
-    height: 490px;
-    margin-top: -470px;
-}
-
-.personajes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-}
-
 nav ul{
 	margin-top: 3%;
 }
@@ -115,6 +100,27 @@ section{
 
 .principal div img{
 	width: 90%;
+}
+
+.formulario-image {
+    float: right;
+    border: 2px solid yellow;
+    width: 590px;
+    height: 490px;
+    margin-top: -470px;
+    margin-right: -140px;
+}
+
+.container {
+    margin-left: -150px;
+    color: orange;
+}
+
+.personajes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .secundario{
@@ -316,6 +322,9 @@ a:hover {
         .container {
             margin-top: -220px;
             color: orange;
+            margin-left: auto;  /* Para centrar horizontalmente */
+            margin-right: auto; /* Para centrar horizontalmente */
+            
         }
 
         .formulario-image {
@@ -422,7 +431,6 @@ a:hover {
             width: 150px;
             margin: 10px;             /* Añade espacio entre las imágenes */
         }
-
 
         footer {
                 height: 80px;
