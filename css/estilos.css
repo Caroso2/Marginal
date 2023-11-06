@@ -246,7 +246,7 @@ a:hover {
 
         .Index h2 {
             font-size: 15px; /* Tamaño del texto */
-            text-align: justify;
+            
         }
 
         .Equipo {
@@ -255,7 +255,7 @@ a:hover {
 
         .Equipo_2 {
             font-size: 15px;
-            text-align: justify;
+            
         }
 
         /*   .Musicos p {
@@ -282,7 +282,7 @@ a:hover {
         .Especial_2 p {
             font-size: 16px;
             margin: 11px;
-            text-align: justify;
+            
         }
 
         .Especial_2 a {
